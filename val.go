@@ -137,6 +137,8 @@ func valToString(data interface{}) string {
 	tp := reflect.TypeOf(data)
 	s := ""
 	switch tp.Kind() {
+	case reflect.String:
+		s = data.(string)
 	case reflect.Bool:
 		s = strconv.FormatBool(data.(bool))
 	case reflect.Int:
