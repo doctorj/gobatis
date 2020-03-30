@@ -4,8 +4,9 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
+
+	"github.com/doctorj/gobatis"       // 引入gobatis
 	_ "github.com/go-sql-driver/mysql" // 引入驱动
-	"github.com/wenj91/gobatis"        // 引入gobatis
 )
 
 // 实体结构示例， tag：field为数据库对应字段名称
